@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>ResearchProject_RTEmergencyPower</defName>
+		<label>emergency power</label>
+		<description>Allows reconfiguring a power switch to automatically turn on if an adjacent power network is about to run out of power, and turn off again when the network's batteries are fully charged.
+
+This behavior is not instant, however, so it's advisable to have at least one battery on every network joined by the switch.</description>
+		<totalCost>1000</totalCost>
+		<researchMods>
+			<li>
+				<specialAction>RT_PowerSwitch.ResearchModsSpecial.InjectPowerSwitch</specialAction>
+			</li>
+		</researchMods>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

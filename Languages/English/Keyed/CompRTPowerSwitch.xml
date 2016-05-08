@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<CompRTPowerSwitch_EmergencyPowerToggle>Emergency power</CompRTPowerSwitch_EmergencyPowerToggle>
+	<CompRTPowerSwitch_EmergencyPowerOn>Power switch will turn on when an adjacent power network is about to run out of power and turn off when network's batteries are fully charged.</CompRTPowerSwitch_EmergencyPowerOn>
+	<CompRTPowerSwitch_EmergencyPowerOff>Power switch will behave normally.</CompRTPowerSwitch_EmergencyPowerOff>
+
+</LanguageData>
