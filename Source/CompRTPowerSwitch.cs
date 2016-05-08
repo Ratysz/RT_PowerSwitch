@@ -47,7 +47,6 @@ namespace RT_PowerSwitch
 
 			cellIndex = tickStagger;
 			cells = GenAdj.CellsAdjacentCardinal(parent).ToList();
-			Log.Message("Cells count is " + cells.Count);
 			while (cellIndex > cells.Count)
 			{
 				cellIndex -= cells.Count;

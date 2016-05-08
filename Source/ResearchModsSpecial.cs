@@ -14,7 +14,10 @@ namespace RT_PowerSwitch
 		public static void InjectPowerSwitch()
 		{
 			ThingDef thingDef = DefDatabase<ThingDef>.GetNamed("PowerSwitch");
-			thingDef.comps.Add(new CompProperties_RTPowerSwitch());
+			if (!thingDef.HasComp(typeof(CompRTPowerSwitch)))
+			{
+				thingDef.comps.Add(new CompProperties_RTPowerSwitch());
+			}
 			foreach (Building building in Find.ListerBuildings.AllBuildingsColonistOfClass<Building_PowerSwitch>())
 			{
 				if (building.TryGetComp<CompRTPowerSwitch>() == null)
