@@ -27,7 +27,6 @@ namespace RT_PowerSwitch
 		private static int lastTickStagger;
 
 		public bool emergencyPowerEnabled = false;
-		public bool colonistHasVisited = true;
 		private Texture2D emergencyPowerButtonTexture;
 
 		public override void PostSpawnSetup()
@@ -65,13 +64,6 @@ namespace RT_PowerSwitch
 			command.toggleAction = () =>
 			{
 				emergencyPowerEnabled = !emergencyPowerEnabled;
-				if (emergencyPowerEnabled)
-				{
-					colonistHasVisited = false;
-				}
-				compFlickable.ResetToOn();
-				compFlickable.DoFlick();
-				FlickUtility.UpdateFlickDesignation(parent);
 			};
 			command.groupKey = 677619692;
 			command.icon = emergencyPowerButtonTexture;
@@ -90,7 +82,6 @@ namespace RT_PowerSwitch
 		public override void PostExposeData()
 		{
 			Scribe_Values.LookValue(ref emergencyPowerEnabled, "emergencyPowerEnabled", false);
-			Scribe_Values.LookValue(ref colonistHasVisited, "colonistHasVisited", true);
 		}
 
 		private void PowerSwitchTick(int tickAmount)
@@ -99,22 +90,12 @@ namespace RT_PowerSwitch
 			{
 				if (emergencyPowerEnabled)
 				{
-					if (!colonistHasVisited)
+					if (cellIndex >= cells.Count)
 					{
-						if (compFlickable.SwitchIsOn)
-						{
-							colonistHasVisited = true;
-						}
+						cellIndex = 0;
 					}
-					else
-					{
-						if (cellIndex >= cells.Count)
-						{
-							cellIndex = 0;
-						}
-						ProcessCell(cells[cellIndex]);
-						cellIndex++;
-					}
+					ProcessCell(cells[cellIndex]);
+					cellIndex++;
 				}
 			}
 		}
