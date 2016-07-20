@@ -27,13 +27,10 @@ namespace RT_PowerSwitch
 		private static int lastTickStagger;
 
 		public bool emergencyPowerEnabled = false;
-		private Texture2D emergencyPowerButtonTexture;
 
 		public override void PostSpawnSetup()
 		{
 			base.PostSpawnSetup();
-
-			emergencyPowerButtonTexture = ContentFinder<Texture2D>.Get("RT_UI/EmergencyPower", true);
 
 			lastTickStagger++;
 			tickStagger = lastTickStagger;
@@ -66,7 +63,7 @@ namespace RT_PowerSwitch
 				emergencyPowerEnabled = !emergencyPowerEnabled;
 			};
 			command.groupKey = 677619692;
-			command.icon = emergencyPowerButtonTexture;
+			command.icon = Resources.emergencyPowerButtonTexture;
 			command.defaultLabel = "CompRTPowerSwitch_EmergencyPowerToggle".Translate();
 			if (emergencyPowerEnabled)
 			{
