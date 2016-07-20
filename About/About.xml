@@ -3,6 +3,6 @@
 	<name>RT Power Switch</name>
 	<author>Ratys</author>
 	<url>https://ludeon.com/forums/index.php?topic=11272</url>
-	<targetVersion>Alpha 13</targetVersion>
+	<targetVersion>0.14.1238</targetVersion>
 	<description>Adds a research to allow the power switch to automatically turn on when an adjacent powernet is about to run out of power.</description>
 </ModMetaData>
