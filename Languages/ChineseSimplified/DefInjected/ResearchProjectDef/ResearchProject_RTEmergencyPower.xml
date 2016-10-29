@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ResearchProject_RTEmergencyPower.label>紧急电源</ResearchProject_RTEmergencyPower.label>
+  <ResearchProject_RTEmergencyPower.description>允许重新配置电源开关，使其能在一侧电网电力不足时自动接通，一侧电网中的电池充满时自动断开。
+
+当然，电源的接通需要一些时间，所以通过开关连接的各个电网最好有至少一个电池。</ResearchProject_RTEmergencyPower.description>
+
+
+</LanguageData>

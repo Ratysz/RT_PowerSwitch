@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ResearchProject_RTEmergencyPower.label>緊急電源</ResearchProject_RTEmergencyPower.label>
+  <ResearchProject_RTEmergencyPower.description>允許重新配置電源開關，使其能在一側電網電力不足時自動接通，一側電網中的電池充滿時自動斷開。
+
+當然，電源的接通需要一些時間，所以通過開關連接的各個電網最好有至少一個電池。</ResearchProject_RTEmergencyPower.description>
+
+
+</LanguageData>
