@@ -54,7 +54,7 @@ namespace RT_PowerSwitch
 			PowerSwitchTick(5);
 		}
 
-		public override IEnumerable<Command> CompGetGizmosExtra()
+		public override IEnumerable<Gizmo> CompGetGizmosExtra()
 		{
 			Command_Toggle command = new Command_Toggle();
 			command.isActive = () => emergencyPowerEnabled;
@@ -99,7 +99,7 @@ namespace RT_PowerSwitch
 
 		public void ProcessCell(IntVec3 cell)
 		{
-			PowerNet powerNet = PowerNetGrid.TransmittedPowerNetAt(cell);
+			PowerNet powerNet = parent.Map.powerNetGrid.TransmittedPowerNetAt(cell);
 			if (powerNet != null)
 			{
 				float maxEnergy = 0.0f;

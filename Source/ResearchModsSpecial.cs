@@ -18,23 +18,26 @@ namespace RT_PowerSwitch
 			{
 				thingDef.comps.Add(new CompProperties_RTPowerSwitch());
 			}
-			foreach (Building building in Find.ListerBuildings.AllBuildingsColonistOfClass<Building_PowerSwitch>())
+			foreach (Map map in Find.Maps)
 			{
-				if (building.TryGetComp<CompRTPowerSwitch>() == null)
+				foreach (Building building in map.listerBuildings.AllBuildingsColonistOfClass<Building_PowerSwitch>())
 				{
-					List<CompProperties> componentsBackup = new List<CompProperties>();
-					foreach (CompProperties compProperties in building.def.comps)
+					if (building.TryGetComp<CompRTPowerSwitch>() == null)
 					{
-						componentsBackup.Add(compProperties);
-					}
-					building.def.comps.Clear();
-					building.def.comps.Add(new CompProperties_RTPowerSwitch());
-					building.InitializeComps();
-					building.TryGetComp<CompRTPowerSwitch>().PostSpawnSetup();
-					building.def.comps.Clear();
-					foreach (CompProperties compProperties in componentsBackup)
-					{
-						building.def.comps.Add(compProperties);
+						List<CompProperties> componentsBackup = new List<CompProperties>();
+						foreach (CompProperties compProperties in building.def.comps)
+						{
+							componentsBackup.Add(compProperties);
+						}
+						building.def.comps.Clear();
+						building.def.comps.Add(new CompProperties_RTPowerSwitch());
+						building.InitializeComps();
+						building.TryGetComp<CompRTPowerSwitch>().PostSpawnSetup();
+						building.def.comps.Clear();
+						foreach (CompProperties compProperties in componentsBackup)
+						{
+							building.def.comps.Add(compProperties);
+						}
 					}
 				}
 			}
