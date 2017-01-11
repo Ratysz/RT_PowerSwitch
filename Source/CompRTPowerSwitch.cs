@@ -19,6 +19,14 @@ namespace RT_PowerSwitch
 			}
 		}
 
+		private bool emergencyPowerResearchCompleted
+		{
+			get
+			{
+				return ResearchModsSpecial.emergencyPowerResearchCompleted;
+			}
+		}
+
 		private CompFlickable compFlickable;
 
 		private List<IntVec3> cells = new List<IntVec3>();
@@ -56,24 +64,27 @@ namespace RT_PowerSwitch
 
 		public override IEnumerable<Gizmo> CompGetGizmosExtra()
 		{
-			Command_Toggle command = new Command_Toggle();
-			command.isActive = () => emergencyPowerEnabled;
-			command.toggleAction = () =>
+			if (emergencyPowerResearchCompleted)
 			{
-				emergencyPowerEnabled = !emergencyPowerEnabled;
-			};
-			command.groupKey = 677619692;
-			command.icon = Resources.emergencyPowerButtonTexture;
-			command.defaultLabel = "CompRTPowerSwitch_EmergencyPowerToggle".Translate();
-			if (emergencyPowerEnabled)
-			{
-				command.defaultDesc = "CompRTPowerSwitch_EmergencyPowerOn".Translate();
+				Command_Toggle command = new Command_Toggle();
+				command.isActive = () => emergencyPowerEnabled;
+				command.toggleAction = () =>
+				{
+					emergencyPowerEnabled = !emergencyPowerEnabled;
+				};
+				command.groupKey = 677619692;
+				command.icon = Resources.emergencyPowerButtonTexture;
+				command.defaultLabel = "CompRTPowerSwitch_EmergencyPowerToggle".Translate();
+				if (emergencyPowerEnabled)
+				{
+					command.defaultDesc = "CompRTPowerSwitch_EmergencyPowerOn".Translate();
+				}
+				else
+				{
+					command.defaultDesc = "CompRTPowerSwitch_EmergencyPowerOff".Translate();
+				}
+				yield return command;
 			}
-			else
-			{
-				command.defaultDesc = "CompRTPowerSwitch_EmergencyPowerOff".Translate();
-			}
-			yield return command;
 		}
 
 		public override void PostExposeData()
@@ -85,7 +96,7 @@ namespace RT_PowerSwitch
 		{
 			if ((Find.TickManager.TicksGame + tickStagger) % tickAmount == 0)
 			{
-				if (emergencyPowerEnabled)
+				if (emergencyPowerResearchCompleted && emergencyPowerEnabled)
 				{
 					if (cellIndex >= cells.Count)
 					{

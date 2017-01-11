@@ -11,12 +11,17 @@ namespace RT_PowerSwitch
 {
 	public static class ResearchModsSpecial
 	{
-		public static void InjectPowerSwitch()
+		public static bool emergencyPowerResearchCompleted = false;
+
+		public static void CompleteEmergencyPowerResearch()
 		{
+			emergencyPowerResearchCompleted = true;
+
 			ThingDef thingDef = DefDatabase<ThingDef>.GetNamed("PowerSwitch");
 			if (!thingDef.HasComp(typeof(CompRTPowerSwitch)))
 			{
 				thingDef.comps.Add(new CompProperties_RTPowerSwitch());
+				Log.Message("RT Power Switch: emergency power component injected.");
 			}
 			foreach (Map map in Find.Maps)
 			{
