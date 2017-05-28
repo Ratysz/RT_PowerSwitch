@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-
-using UnityEngine;
 using Verse;
 using RimWorld;
 
@@ -19,11 +15,18 @@ namespace RT_PowerSwitch
 			}
 		}
 
-		private bool emergencyPowerResearchCompleted
+		private static bool emergencyPowerResearchCompleted_cache = false;
+		private static bool emergencyPowerResearchCompleted_dirty = true;
+		private static bool emergencyPowerResearchCompleted
 		{
 			get
 			{
-				return ResearchModsSpecial.emergencyPowerResearchCompleted;
+				if (emergencyPowerResearchCompleted_dirty)
+				{
+					emergencyPowerResearchCompleted_cache =
+						DefDatabase<ResearchProjectDef>.GetNamed("ResearchProject_RTEmergencyPower").IsFinished;
+				}
+				return emergencyPowerResearchCompleted_cache;
 			}
 		}
 
@@ -36,9 +39,9 @@ namespace RT_PowerSwitch
 
 		public bool emergencyPowerEnabled = false;
 
-		public override void PostSpawnSetup()
+		public override void PostSpawnSetup(bool respawningAfterLoad)
 		{
-			base.PostSpawnSetup();
+			base.PostSpawnSetup(respawningAfterLoad);
 
 			lastTickStagger++;
 			tickStagger = lastTickStagger;
@@ -55,6 +58,8 @@ namespace RT_PowerSwitch
 			{
 				cellIndex -= cells.Count;
 			}
+
+			emergencyPowerResearchCompleted_dirty = true;
 		}
 
 		public override void CompTick()
@@ -64,6 +69,7 @@ namespace RT_PowerSwitch
 
 		public override IEnumerable<Gizmo> CompGetGizmosExtra()
 		{
+			emergencyPowerResearchCompleted_dirty = true;
 			if (emergencyPowerResearchCompleted)
 			{
 				Command_Toggle command = new Command_Toggle();
@@ -73,7 +79,7 @@ namespace RT_PowerSwitch
 					emergencyPowerEnabled = !emergencyPowerEnabled;
 				};
 				command.groupKey = 677619692;
-				command.icon = Resources.emergencyPowerButtonTexture;
+				command.icon = Mod.emergencyPowerButtonTexture;
 				command.defaultLabel = "CompRTPowerSwitch_EmergencyPowerToggle".Translate();
 				if (emergencyPowerEnabled)
 				{
@@ -89,7 +95,7 @@ namespace RT_PowerSwitch
 
 		public override void PostExposeData()
 		{
-			Scribe_Values.LookValue(ref emergencyPowerEnabled, "emergencyPowerEnabled", false);
+			Scribe_Values.Look(ref emergencyPowerEnabled, "emergencyPowerEnabled", false);
 		}
 
 		private void PowerSwitchTick(int tickAmount)

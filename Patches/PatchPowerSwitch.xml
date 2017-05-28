@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Buildings/ThingDef[defName = "PowerSwitch"]/comps</xpath>
+		<value>
+			<li Class="RT_PowerSwitch.CompProperties_RTPowerSwitch"/>
+		</value>
+	</Operation>
+</Patch>
