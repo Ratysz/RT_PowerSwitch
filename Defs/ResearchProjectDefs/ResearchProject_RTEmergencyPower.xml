@@ -12,6 +12,9 @@ This behavior is not instant, however, so it's advisable to have at least one ba
 		<prerequisites>
 			<li>Electricity</li>
 		</prerequisites>
+		<tab>RTMods</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
 </ResearchProjectDefs>
