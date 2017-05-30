@@ -79,7 +79,7 @@ namespace RT_PowerSwitch
 					emergencyPowerEnabled = !emergencyPowerEnabled;
 				};
 				command.groupKey = 677619692;
-				command.icon = Mod.emergencyPowerButtonTexture;
+				command.icon = Resources.emergencyPowerButtonTexture;
 				command.defaultLabel = "CompRTPowerSwitch_EmergencyPowerToggle".Translate();
 				if (emergencyPowerEnabled)
 				{
