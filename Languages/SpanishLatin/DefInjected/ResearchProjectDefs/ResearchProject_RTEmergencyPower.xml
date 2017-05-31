@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<ResearchProject_RTEmergencyPower.label>Energía de emergencia</ResearchProject_RTEmergencyPower.label>
+	<ResearchProject_RTEmergencyPower.description>Permite reconfigurar un interruptor de encendido para que se encienda automáticamente si una red de alimentación adyacente está a punto de agotarse y se vuelva a apagar cuando las baterías de la red están completamente cargadas.
+
+Sin embargo, este comportamiento no es instantáneo, por lo que es recomendable tener menos una batería en cada red unida por el interruptor.
+	</ResearchProject_RTEmergencyPower.description>
+
+</LanguageData>
