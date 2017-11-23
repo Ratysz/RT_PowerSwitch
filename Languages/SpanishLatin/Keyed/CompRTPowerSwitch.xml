@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<CompRTPowerSwitch_EmergencyPowerToggle>Energía de emergencia</CompRTPowerSwitch_EmergencyPowerToggle>
+	<CompRTPowerSwitch_EmergencyPowerOn>El interruptor se encenderá cuando una red eléctrica adyacente esté a punto de agotarse y se apagará cuando las baterías de la red estén completamente cargadas.</CompRTPowerSwitch_EmergencyPowerOn>
+	<CompRTPowerSwitch_EmergencyPowerOff>El interruptor se comportará normalmente.</CompRTPowerSwitch_EmergencyPowerOff>
+
+</LanguageData>
