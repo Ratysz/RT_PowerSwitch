@@ -4,7 +4,6 @@
 	<ResearchProject_RTEmergencyPower.label>резервная энергия</ResearchProject_RTEmergencyPower.label>
 	<ResearchProject_RTEmergencyPower.description>Позволяет настраивать выключатели на автоматическое включение при низком уровне электроэнергии в примыкающих сетях и выключение при заполнении их батарей.
 
-Это переключение не мнговенно, поэтому рекомендуется установить как минимум одну батарею на каждой соединяемой выключателем сети.
-	</ResearchProject_RTEmergencyPower.description>
+Это переключение не мнговенно, поэтому рекомендуется установить как минимум одну батарею на каждой соединяемой выключателем сети.</ResearchProject_RTEmergencyPower.description>
 
 </LanguageData>
