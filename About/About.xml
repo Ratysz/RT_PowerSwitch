@@ -3,10 +3,16 @@
 	<name>RT Power Switch</name>
 	<author>Ratys</author>
 	<url>https://ludeon.com/forums/index.php?topic=11272</url>
-	<targetVersion>0.19.2009</targetVersion>
-	<description>Adds a research to allow the power switch to automatically turn on when an adjacent powernet is about to run out of power.
+	<targetVersion>1.0.2056</targetVersion>
+	<description>Adds a new researchable (RT Mods research tab) function to the power switch: when enabled, the switch will automatically turn on when an adjacent powernet is about to run out of power, and turn off once the batteries are all full.
 
-Chinese translation by duduluu.
-Spanish translation by a kind stranger who wished to remain anonymous.
-	</description>
+Available languages:
+ - Chinese (simplified) (by duduluu)
+ - Chinese (traditional) (by duduluu)
+ - English
+ - Russian
+ - Spanish (Castilian) (by a kind stranger who wished to remain anonymous)
+ - Spanish (Latin America) (by a kind stranger who wished to remain anonymous)
+
+Refer to forum thread for additional information.</description>
 </ModMetaData>

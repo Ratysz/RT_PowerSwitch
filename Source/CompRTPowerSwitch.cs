@@ -30,6 +30,10 @@ namespace RT_PowerSwitch
 			}
 		}
 
+		private static System.Reflection.FieldInfo wantsSwitchOnField = typeof(CompFlickable).GetField(
+			"wantSwitchOn",
+			System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+
 		private CompFlickable compFlickable;
 
 		private List<IntVec3> cells = new List<IntVec3>();
@@ -69,7 +73,6 @@ namespace RT_PowerSwitch
 
 		public override IEnumerable<Gizmo> CompGetGizmosExtra()
 		{
-			emergencyPowerResearchCompleted_dirty = true;
 			if (emergencyPowerResearchCompleted)
 			{
 				Command_Toggle command = new Command_Toggle();
@@ -128,26 +131,22 @@ namespace RT_PowerSwitch
 					storedEnergy += compPowerBattery.StoredEnergy;
 				}
 
-				if (!compFlickable.SwitchIsOn
-					&& currentRate < 0
-					&& storedEnergy < -currentRate * GenDate.TicksPerHour / 6.0f)
-				{
-					System.Reflection.FieldInfo fieldInfo = typeof(CompFlickable).GetField(
-						"wantSwitchOn", // Thanks Haplo!
-						System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-					fieldInfo.SetValue(compFlickable, true);
-					compFlickable.SwitchIsOn = true;
-					FlickUtility.UpdateFlickDesignation(parent);
-				}
-				else
+				if (compFlickable.SwitchIsOn)
 				{
 					if (storedEnergy >= maxEnergy)
 					{
-						System.Reflection.FieldInfo fieldInfo = typeof(CompFlickable).GetField(
-							"wantSwitchOn", // Thanks Haplo!
-							System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-						fieldInfo.SetValue(compFlickable, false);
+						wantsSwitchOnField.SetValue(compFlickable, false);
 						compFlickable.SwitchIsOn = false;
+						FlickUtility.UpdateFlickDesignation(parent);
+					}
+				}
+				else
+				{
+					if (currentRate <= 0
+					&& storedEnergy <= -currentRate * GenDate.TicksPerHour / 6.0f)
+					{
+						wantsSwitchOnField.SetValue(compFlickable, true);
+						compFlickable.SwitchIsOn = true;
 						FlickUtility.UpdateFlickDesignation(parent);
 					}
 				}
