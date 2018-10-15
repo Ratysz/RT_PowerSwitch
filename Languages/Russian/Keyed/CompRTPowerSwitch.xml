@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-
-	<CompRTPowerSwitch_EmergencyPowerToggle>Резервная энергия</CompRTPowerSwitch_EmergencyPowerToggle>
-	<CompRTPowerSwitch_EmergencyPowerOn>Выключатель автоматически включится при низком уровне электроэнергии в примыкающих сетях и выключится при заполнении их батарей.</CompRTPowerSwitch_EmergencyPowerOn>
-	<CompRTPowerSwitch_EmergencyPowerOff>Выключатель работает как обычно.</CompRTPowerSwitch_EmergencyPowerOff>
-
-</LanguageData>

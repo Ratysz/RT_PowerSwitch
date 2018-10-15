@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-
-	<ResearchProject_RTEmergencyPower.label>emergency power</ResearchProject_RTEmergencyPower.label>
-	<ResearchProject_RTEmergencyPower.description>Allows reconfiguring a power switch to automatically turn on if an adjacent power network is about to run out of power, and turn off again when the network's batteries are fully charged.
-
-This behavior is not instant, however, so it's advisable to have at least one battery on every network joined by the switch.</ResearchProject_RTEmergencyPower.description>
-
-</LanguageData>

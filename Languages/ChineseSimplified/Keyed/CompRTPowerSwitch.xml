@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <CompRTPowerSwitch_EmergencyPowerToggle>紧急电源</CompRTPowerSwitch_EmergencyPowerToggle>
-  <CompRTPowerSwitch_EmergencyPowerOn>在一侧电网电力不足时自动接通，一侧电网中的电池充满时自动断开。</CompRTPowerSwitch_EmergencyPowerOn>
-  <CompRTPowerSwitch_EmergencyPowerOff>电力开关当前为普通模式。</CompRTPowerSwitch_EmergencyPowerOff>
-
-</LanguageData>
