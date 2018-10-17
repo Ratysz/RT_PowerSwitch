@@ -1,2 +1,2 @@
 # RT_PowerSwitch
-RimWorld mod; adds a research to allow the power switch to automatically turn on when an adjacent powernet is about to run out of power.
+RimWorld mod; see [About.xml](../blob/master/About/About.xml) and [forum thread](https://ludeon.com/forums/index.php?topic=11272).
