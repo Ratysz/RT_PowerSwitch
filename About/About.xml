@@ -3,7 +3,7 @@
 	<name>RT Power Switch</name>
 	<author>Ratys</author>
 	<url>https://ludeon.com/forums/index.php?topic=11272</url>
-	<targetVersion>1.0.2056</targetVersion>
+	<targetVersion>1.0.2059</targetVersion>
 	<description>A new researchable (RT Mods research tab) function for the power switch: when enabled, the switch will automatically turn on when an adjacent powernet is about to run out of power, and turn off once the batteries are all full.
 
 Does not require a new colony to add or remove (might throw a one-time error).
