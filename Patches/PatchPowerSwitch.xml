@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThingDef[defName = "PowerSwitch"]/comps</xpath>
+		<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/comps</xpath>
 		<value>
 			<li Class="RT_PowerSwitch.CompProperties_RTPowerSwitch"/>
 		</value>
