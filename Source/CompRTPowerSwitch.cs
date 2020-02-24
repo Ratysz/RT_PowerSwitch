@@ -76,15 +76,16 @@ namespace RT_PowerSwitch
 		{
 			if (EmergencyPowerResearchCompleted)
 			{
-				Command_Toggle command = new Command_Toggle();
-				command.isActive = () => emergencyPowerEnabled;
-				command.toggleAction = () =>
+				Command_Toggle command = new Command_Toggle
 				{
-					emergencyPowerEnabled = !emergencyPowerEnabled;
+					isActive = () => emergencyPowerEnabled,
+					toggleAction = () =>
+					{
+						emergencyPowerEnabled = !emergencyPowerEnabled;
+					},
+					icon = Resources.emergencyPowerButtonTexture,
+					defaultLabel = "CompRTPowerSwitch_EmergencyPowerToggle".Translate()
 				};
-				command.groupKey = 677619692;
-				command.icon = Resources.emergencyPowerButtonTexture;
-				command.defaultLabel = "CompRTPowerSwitch_EmergencyPowerToggle".Translate();
 				if (emergencyPowerEnabled)
 				{
 					command.defaultDesc = "CompRTPowerSwitch_EmergencyPowerOn".Translate();
