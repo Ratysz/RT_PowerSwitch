@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-
-	<ResearchProject_RTEmergencyPower.label>alimentation de secours</ResearchProject_RTEmergencyPower.label>
-	<ResearchProject_RTEmergencyPower.description>Permet de reconfigurer un interrupteur afin qu'il s'allume si un réseau électrique adjacent est sur le point de manquer de puissance, et qu'il s'actionne de nouveau lorsque les batteries du réseau sont de nouveau chargées.
-
-Ce comportement n'est pas instantanné, cependant, donc il est conseillé d'avoir au moins une batterie sur chaque réseau affilié à l'interrupteur.</ResearchProject_RTEmergencyPower.description>
-
-</LanguageData>

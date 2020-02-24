@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-
-	<CompRTPowerSwitch_EmergencyPowerToggle>Alimentation de secours</CompRTPowerSwitch_EmergencyPowerToggle>
-	<CompRTPowerSwitch_EmergencyPowerOn>L'interrupteur s'allumera lorsqu'un réseau électrique adjacent sera sur le point de manquer d'énergie et s'éteindra lorsque les batteries du réseau seront pleinement rechargées.</CompRTPowerSwitch_EmergencyPowerOn>
-	<CompRTPowerSwitch_EmergencyPowerOff>L'interrupteur se comportera normalement.</CompRTPowerSwitch_EmergencyPowerOff>
-
-</LanguageData>

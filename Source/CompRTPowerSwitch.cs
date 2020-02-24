@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using RimWorld;
+using System.Collections.Generic;
 using System.Linq;
 using Verse;
-using RimWorld;
 
 namespace RT_PowerSwitch
 {
@@ -17,7 +17,8 @@ namespace RT_PowerSwitch
 
 		private static bool emergencyPowerResearchCompleted_cache = false;
 		private static bool emergencyPowerResearchCompleted_dirty = true;
-		private static bool emergencyPowerResearchCompleted
+
+		private static bool EmergencyPowerResearchCompleted
 		{
 			get
 			{
@@ -73,7 +74,7 @@ namespace RT_PowerSwitch
 
 		public override IEnumerable<Gizmo> CompGetGizmosExtra()
 		{
-			if (emergencyPowerResearchCompleted)
+			if (EmergencyPowerResearchCompleted)
 			{
 				Command_Toggle command = new Command_Toggle();
 				command.isActive = () => emergencyPowerEnabled;
@@ -105,7 +106,7 @@ namespace RT_PowerSwitch
 		{
 			if ((Find.TickManager.TicksGame + tickStagger) % tickAmount == 0)
 			{
-				if (emergencyPowerResearchCompleted && emergencyPowerEnabled)
+				if (EmergencyPowerResearchCompleted && emergencyPowerEnabled)
 				{
 					if (cellIndex >= cells.Count)
 					{

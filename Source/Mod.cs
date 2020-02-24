@@ -1,13 +1,12 @@
-﻿using Verse;
-using UnityEngine;
+﻿using UnityEngine;
+using Verse;
 
 namespace RT_PowerSwitch
 {
-	class Mod : Verse.Mod
+	internal class Mod : Verse.Mod
 	{
 		public Mod(ModContentPack content) : base(content)
 		{
-
 		}
 	}
 
