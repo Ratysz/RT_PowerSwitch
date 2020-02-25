@@ -6,4 +6,21 @@
 			<li Class="RT_PowerSwitch.CompProperties_RTPowerSwitch"/>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/inspectorTabs</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "PowerSwitch"]</xpath>
+			<value>
+				<inspectorTabs>
+					<li>RT_PowerSwitch.ITab_RTEmergencyPowerSettings</li>
+				</inspectorTabs>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "PowerSwitch"]/inspectorTabs</xpath>
+			<value>
+				<li>RT_PowerSwitch.ITab_RTEmergencyPowerSettings</li>
+			</value>
+		</match>
+	</Operation>
 </Patch>

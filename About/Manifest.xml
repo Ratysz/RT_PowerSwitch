@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
 	<identifier>RT_PowerSwitch</identifier>
-	<version>1.1.0.13</version>
+	<version>1.1.1.0</version>
 	<manifestUri>https://raw.githack.com/Ratysz/RT_PowerSwitch/master/About/Manifest.xml</manifestUri>
-	<downloadUri>https://github.com/Ratysz/RT_PowerSwitch/releases/1.0-1.0.13</downloadUri>
+	<downloadUri>https://github.com/Ratysz/RT_PowerSwitch/releases/1.1-1.1.0</downloadUri>
 </Manifest>

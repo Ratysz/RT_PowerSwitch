@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<ITab_RTEmergencyPowerSettings_LabelKey>Settings</ITab_RTEmergencyPowerSettings_LabelKey>
+	<ITab_RTEmergencyPowerSettings_KickInLabel>Turn on at</ITab_RTEmergencyPowerSettings_KickInLabel>
+	<ITab_RTEmergencyPowerSettings_KickInTip>Settings</ITab_RTEmergencyPowerSettings_KickInTip>
+	<ITab_RTEmergencyPowerSettings_ShutOffLabel>Shut off at</ITab_RTEmergencyPowerSettings_ShutOffLabel>
+	<ITab_RTEmergencyPowerSettings_ShutOffTip>Settings</ITab_RTEmergencyPowerSettings_ShutOffTip>
+	<ITab_RTEmergencyPowerSettings_DirectionLabel>Probe direction:</ITab_RTEmergencyPowerSettings_DirectionLabel>
+	<ITab_RTEmergencyPowerSettings_DirectionTip>The switch will look for batteries in the power network that connects to it from this direction.</ITab_RTEmergencyPowerSettings_DirectionTip>
+</LanguageData>
