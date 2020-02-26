@@ -1,10 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 	<ITab_RTEmergencyPowerSettings_LabelKey>Settings</ITab_RTEmergencyPowerSettings_LabelKey>
+	<ITab_RTEmergencyPowerSettings_UnitsTip>Sets whether the values below are treated as percentages of total battery capacity, or as flat energy amount.</ITab_RTEmergencyPowerSettings_UnitsTip>
 	<ITab_RTEmergencyPowerSettings_KickInLabel>Turn on at</ITab_RTEmergencyPowerSettings_KickInLabel>
-	<ITab_RTEmergencyPowerSettings_KickInTip>Settings</ITab_RTEmergencyPowerSettings_KickInTip>
+	<ITab_RTEmergencyPowerSettings_KickInTip>If this value is smaller than the next one, the switch will turn on if energy amount in the monitored network's batteries falls below the value.
+
+If this value is greater than the next one, the switch will turn on if energy amount in the monitored network's batteries rises above the value.</ITab_RTEmergencyPowerSettings_KickInTip>
 	<ITab_RTEmergencyPowerSettings_ShutOffLabel>Shut off at</ITab_RTEmergencyPowerSettings_ShutOffLabel>
-	<ITab_RTEmergencyPowerSettings_ShutOffTip>Settings</ITab_RTEmergencyPowerSettings_ShutOffTip>
+	<ITab_RTEmergencyPowerSettings_ShutOffTip>If this value is smaller than the previous one, the switch will turn off if energy amount in the monitored network's batteries falls below the value.
+
+If this value is greater than the previous one, the switch will turn off if energy amount in the monitored network's batteries rises above the value.</ITab_RTEmergencyPowerSettings_ShutOffTip>
 	<ITab_RTEmergencyPowerSettings_DirectionLabel>Probe direction:</ITab_RTEmergencyPowerSettings_DirectionLabel>
 	<ITab_RTEmergencyPowerSettings_DirectionTip>The switch will look for batteries in the power network that connects to it from this direction.</ITab_RTEmergencyPowerSettings_DirectionTip>
 </LanguageData>

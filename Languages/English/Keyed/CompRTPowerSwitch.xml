@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<CompRTPowerSwitch_EmergencyPowerToggle>Emergency power</CompRTPowerSwitch_EmergencyPowerToggle>
-	<CompRTPowerSwitch_EmergencyPowerOn>Power switch will turn on when an adjacent power network is about to run out of power and turn off when network's batteries are fully charged.</CompRTPowerSwitch_EmergencyPowerOn>
+	<CompRTPowerSwitch_EmergencyPowerToggle>Energy level regulation</CompRTPowerSwitch_EmergencyPowerToggle>
+	<CompRTPowerSwitch_EmergencyPowerOn>Power will automatically turn on and off based on the amount of energy stored in an adjacent power network's batteries.
+
+Precise behavior can be configured in the "Settings" inspector tab.</CompRTPowerSwitch_EmergencyPowerOn>
 	<CompRTPowerSwitch_EmergencyPowerOff>Power switch will behave normally.</CompRTPowerSwitch_EmergencyPowerOff>
-	<CompRTPowerSwitch_MonitoredNetwork>Power storage status: {0}/{1}Wd ({2})</CompRTPowerSwitch_MonitoredNetwork>
-	<CompRTPowerSwitch_MonitoredNetworkInvalid>Power storage status: no batteries!</CompRTPowerSwitch_MonitoredNetworkInvalid>
+	<CompRTPowerSwitch_MonitoredNetwork>Energy storage status: {0}/{1}Wd ({2})</CompRTPowerSwitch_MonitoredNetwork>
+	<CompRTPowerSwitch_MonitoredNetworkInvalid>Energy storage status: no batteries!</CompRTPowerSwitch_MonitoredNetworkInvalid>
 
 
 </LanguageData>

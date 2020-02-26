@@ -1,4 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-	<TabRTEmergencyPowerSettings>Настройки</TabRTEmergencyPowerSettings>
+	<ITab_RTEmergencyPowerSettings_LabelKey>Настройки</ITab_RTEmergencyPowerSettings_LabelKey>
+	<ITab_RTEmergencyPowerSettings_UnitsTip>Определяет будут ли значения ниже читаться как проценты от общей емкости, или как количество энергии.</ITab_RTEmergencyPowerSettings_UnitsTip>
+	<ITab_RTEmergencyPowerSettings_KickInLabel>Включить при</ITab_RTEmergencyPowerSettings_KickInLabel>
+	<ITab_RTEmergencyPowerSettings_KickInTip>Если это значение меньше чем следующее, выключатель включится если уровень энергии в батареях наблюдаемой сети упадет ниже этого значения.
+
+Если это значение больше чем следующее, выключатель включится если уровень энергии в батареях наблюдаемой сети поднимется выше этого значения.</ITab_RTEmergencyPowerSettings_KickInTip>
+	<ITab_RTEmergencyPowerSettings_ShutOffLabel>Выключить при</ITab_RTEmergencyPowerSettings_ShutOffLabel>
+	<ITab_RTEmergencyPowerSettings_ShutOffTip>Если это значение меньше чем предыдущее, выключатель выключится если уровень энергии в батареях наблюдаемой сети упадет ниже этого значения.
+
+Если это значение больше чем предыдущее, выключатель выключится если уровень энергии в батареях наблюдаемой сети поднимется выше этого значения.</ITab_RTEmergencyPowerSettings_ShutOffTip>
+	<ITab_RTEmergencyPowerSettings_DirectionLabel>Направление зонда:</ITab_RTEmergencyPowerSettings_DirectionLabel>
+	<ITab_RTEmergencyPowerSettings_DirectionTip>Выключатель будет следить за состоянием батарей в сети примыкающей к нему с этого направления.</ITab_RTEmergencyPowerSettings_DirectionTip>
 </LanguageData>

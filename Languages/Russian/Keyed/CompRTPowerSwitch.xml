@@ -1,8 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
 
-	<CompRTPowerSwitch_EmergencyPowerToggle>Резервная энергия</CompRTPowerSwitch_EmergencyPowerToggle>
-	<CompRTPowerSwitch_EmergencyPowerOn>Выключатель автоматически включится при низком уровне электроэнергии в примыкающих сетях и выключится при заполнении их батарей.</CompRTPowerSwitch_EmergencyPowerOn>
+	<CompRTPowerSwitch_EmergencyPowerToggle>Контроль уровня энергии</CompRTPowerSwitch_EmergencyPowerToggle>
+	<CompRTPowerSwitch_EmergencyPowerOn>Выключатель будет автоматически включаться и выключаться в зависимости от уровня электроэнергии в батареях примыкающей сети.
+
+Точную настройку можно осуществить во вкладке "Настройки".</CompRTPowerSwitch_EmergencyPowerOn>
 	<CompRTPowerSwitch_EmergencyPowerOff>Выключатель работает как обычно.</CompRTPowerSwitch_EmergencyPowerOff>
+	<CompRTPowerSwitch_MonitoredNetwork>Статус батарейного блока: {0}/{1}Вд ({2})</CompRTPowerSwitch_MonitoredNetwork>
+	<CompRTPowerSwitch_MonitoredNetworkInvalid>Статус батарейного блока: нет батарей!</CompRTPowerSwitch_MonitoredNetworkInvalid>
 
 </LanguageData>
