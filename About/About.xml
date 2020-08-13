@@ -7,6 +7,7 @@
 	<supportedVersions>
 		<li>1.0</li>
 		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
 	<description>A new researchable (RT Mods research tab) function for the power switch: when enabled, the switch will automatically turn on when an adjacent powernet is about to run out of power, and turn off once the batteries are all full.
 
