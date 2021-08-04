@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<CompRTPowerSwitch_EmergencyPowerToggle>电能调节</CompRTPowerSwitch_EmergencyPowerToggle>
+	<CompRTPowerSwitch_EmergencyPowerOn>电力将根据相邻电网电池中储存的能量自动开启和关闭。精确的行为可以在“设置”检查器选项卡中配置。</CompRTPowerSwitch_EmergencyPowerOn>
+	<CompRTPowerSwitch_EmergencyPowerOff>电能调节开关将正常运行。</CompRTPowerSwitch_EmergencyPowerOff>
+	<CompRTPowerSwitch_MonitoredNetwork>储能状态：{0}/{1}Wd ({2})</CompRTPowerSwitch_MonitoredNetwork>
+	<CompRTPowerSwitch_MonitoredNetworkInvalid>储能状态：无电池!</CompRTPowerSwitch_MonitoredNetworkInvalid>
+
+
+</LanguageData>

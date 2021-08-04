@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<ITab_RTEmergencyPowerSettings_LabelKey>设置</ITab_RTEmergencyPowerSettings_LabelKey>
+	<ITab_RTEmergencyPowerSettings_UnitsTip>设置以下数值是作为电池总容量的百分比，还是作为单独的电池容量来处理。</ITab_RTEmergencyPowerSettings_UnitsTip>
+	<ITab_RTEmergencyPowerSettings_KickInLabel>启用时间</ITab_RTEmergencyPowerSettings_KickInLabel>
+	<ITab_RTEmergencyPowerSettings_KickInTip>如果这个值小于下一个值，如果被监测网络的电池容量低于这个值，开关就会打开。如果这个值大于下一个值，如果被监测网络的电池容量高于这个值，开关就会打开。</ITab_RTEmergencyPowerSettings_KickInTip>
+	<ITab_RTEmergencyPowerSettings_ShutOffLabel>关闭时间</ITab_RTEmergencyPowerSettings_ShutOffLabel>
+	<ITab_RTEmergencyPowerSettings_ShutOffTip>如果这个值小于前一个值，如果被监测网络的电池容量低于这个值，开关将关闭。如果这个值大于前一个值，如果被监测网络的电池容量高于这个值，开关将关闭。</ITab_RTEmergencyPowerSettings_ShutOffTip>
+	<ITab_RTEmergencyPowerSettings_DirectionLabel>探测方向:</ITab_RTEmergencyPowerSettings_DirectionLabel>
+	<ITab_RTEmergencyPowerSettings_DirectionTip>电能调节开关会在从这个方向连接到它的电源网络中寻找电池。</ITab_RTEmergencyPowerSettings_DirectionTip>
+</LanguageData>

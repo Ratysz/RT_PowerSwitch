@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<ResearchProject_RTEmergencyPower.label>自动电能调节</ResearchProject_RTEmergencyPower.label>
+	<ResearchProject_RTEmergencyPower.description>能够重新配置电源开关，以根据相邻电力网电池中储存的能量自动开启和关闭。</ResearchProject_RTEmergencyPower.description>
+
+</LanguageData>
